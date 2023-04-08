@@ -104,6 +104,7 @@ const signup = async (req, res) => {
 
 const login = async (req, res) => {
   const { username, password } = req.body;
+  console.log(username,password)
 
   try {
     const serverClient = connect(api_key, api_secret, app_id);
